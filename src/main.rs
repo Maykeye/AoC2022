@@ -1,6 +1,7 @@
 mod aoc1;
 mod aoc2;
 mod aoc3;
+mod aoc4;
 
 mod utils;
 
@@ -14,6 +15,7 @@ fn run_forced() -> bool {
         aoc1::run,
         aoc2::run,
         aoc3::run,
+        aoc4::run,
     ];
 
     for (i, func) in aocs.iter().enumerate() {
@@ -28,7 +30,7 @@ fn run_forced() -> bool {
 
 fn main() {
     if ! run_forced() {
-        aoc3::run();
+        aoc4::run();
     }
 
 

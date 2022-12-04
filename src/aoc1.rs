@@ -26,7 +26,7 @@ impl From<&str> for AOC1InputLine {
 fn input_file() -> AOC1 {
     let input = utils::input_file_lines(AOC);
 
-    let mut elves = vec![vec![1]];
+    let mut elves = vec![vec![0]];
 
     for line in input.iter().map(|x| AOC1InputLine::from(x.as_ref())) {
         match line {
